@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background: radial-gradient(
+    ellipse at bottom,
+    #102946 0%,
+    rgb(7, 46, 79) 100%
+  );
+}
+
+
+
+.bgFirst{
+  background-color: rgb(173, 46, 236);
+  color: black;
+}
+.bgSecond{
+  background-color: rgb(73, 221, 107);
+  color: black;
+}
+.bgThird{
+  background-color: rgb(199, 62, 158);
+  color: black;
+}
+.bgFourth{
+  background-color: rgb(230, 236, 46);
+  color: black;
+}
+
+
+
+.bgF{
+  background-color: rgb(203, 123, 243);
+  color: rgb(64, 64, 64);
+}
+.bgS{
+  background-color: rgb(140, 221, 73);
+  color: rgb(64, 64, 64);
+}
+.bgT{
+  background-color: rgb(233, 114, 198);
+  color: rgb(64, 64, 64);
+}
+.bgFou{
+  background-color: rgb(251, 255, 138);
+  color: rgb(64, 64, 64);
+}
