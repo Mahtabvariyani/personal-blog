@@ -1,24 +1,37 @@
-import { Post } from "@/app/lib/interface";
-import { client } from "@/app/lib/sanity";
-import { urlFor } from "@/app/lib/sanityImageUrl";
-import { PortableText } from "@portabletext/react";
-import Image from "next/image";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { Post } from '@/app/lib/interface';
+import { client } from '@/app/lib/sanity';
+import { urlFor } from '@/app/lib/sanityImageUrl';
+import { PortableText } from '@portabletext/react';
+import Image from 'next/image';
 
-async function getData(slug: string) {
-  const query = `*[_type == "post" && slug.current == "${slug}"][0]`;
+export const getStaticPaths: GetStaticPaths = async () => {
+  // Fetch the slugs for all posts from your data source
+  const slugs = await client.fetch(`*[_type == "post"].slug.current`);
 
-  const data = await client.fetch(query);
+  // Map the slugs to the required format for Next.js
+  const paths = slugs.map((slug: string) => ({ params: { slug } }));
 
-  return data;
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  // Fetch data for the specific post using the provided slug
+  const data = await client.fetch(
+    `*[_type == "post" && slug.current == $slug][0]`,
+    { slug: params?.slug }
+  );
+
+  return {
+    props: { data },
+  };
+};
+
+interface SlugPageProps {
+  data: Post;
 }
 
-export default async function SlugPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const data = (await getData(params.slug)) as Post;
-
+const SlugPage: React.FC<SlugPageProps> = ({ data }) => {
   const PortableTextComponent = {
     types: {
       image: ({ value }: { value: any }) => (
@@ -57,4 +70,6 @@ export default async function SlugPage({
       </div>
     </div>
   );
-}
+};
+
+export default SlugPage;
