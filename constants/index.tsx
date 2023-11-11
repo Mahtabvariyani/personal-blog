@@ -40,7 +40,7 @@ export const navLinks = [
     name: " main",
   },
   {
-    href: "/questions",
+    href: "questions",
     name: "questions",
   },
   {
