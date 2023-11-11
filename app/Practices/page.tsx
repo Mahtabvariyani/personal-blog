@@ -5,6 +5,7 @@ const page = () => {
   return (
     <div className="h-[70vh] flex">
     <HideShowButton/>
+    practices
     </div>
   );
 };
