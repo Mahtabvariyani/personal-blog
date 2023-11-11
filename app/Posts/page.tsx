@@ -33,7 +33,7 @@ export default async function posts() {
           <li key={post._id} className="py-4">
             <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
               <Link
-                href={`/post/${post.slug.current}`}
+                href={`/posts/${post.slug.current}`}
                 prefetch
                 className="space-y-3 xl:col-span-3"
               >
