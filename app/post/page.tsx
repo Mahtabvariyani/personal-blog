@@ -6,7 +6,6 @@ async function getData() {
   const query = `*[_type == "post"]`;
 
   const data = await client.fetch(query);
-
   return data;
 }
 
