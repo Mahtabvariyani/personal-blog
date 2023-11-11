@@ -10,9 +10,9 @@ const Navbar = () => {
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <Link href={`/${link.href}`} passHref>
-                  <a className="hover:text-gray-500">{link.name}</a>
-                </Link>
+           
+                  <a   href={`/${link.href}`} className="hover:text-gray-500">{link.name}</a>
+              
               </li>
             ))}
           </ul>
