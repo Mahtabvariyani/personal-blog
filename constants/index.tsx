@@ -37,7 +37,7 @@ export const links = [
 export const navLinks = [
   {
     href: "/",
-    name:  "b اصلی",
+    name:  " اصلی",
   },
   {
     href: "/Questions",
