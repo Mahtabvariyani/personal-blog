@@ -28,9 +28,35 @@ export const quotes = [
 ];
 
 export const links = [
-  { linkName: "First", linkHref: "/",bg:'bgF' },
-  { linkName: "Second", linkHref: "/" ,bg:'bgS'},
-  { linkName: "Third", linkHref: "/",bg:'bgT' },
-  { linkName: "Fourth", linkHref: "/",bg:'bgFou' },
+  { linkName: "First", linkHref: "/", bg: "bgF" },
+  { linkName: "Second", linkHref: "/", bg: "bgS" },
+  { linkName: "Third", linkHref: "/", bg: "bgT" },
+  { linkName: "Fourth", linkHref: "/", bg: "bgFou" },
+];
 
+export const navLinks = [
+  {
+    href: "/",
+    name: "اصلی",
+  },
+  {
+    href: "/Questions",
+    name: "!سوال ها ",
+  },
+  {
+    href: "/Practices",
+    name: " !تمرین ها ",
+  },
+  {
+    href: "/Learn",
+    name: "دارم یاد میگیرم",
+  },
+  {
+    href: "/Learned",
+    name: "باد گرفتم",
+  },
+  {
+    href: "/Posts",
+    name: "پست ها",
+  },
 ];
