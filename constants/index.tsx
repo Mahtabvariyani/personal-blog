@@ -53,6 +53,6 @@ export const navLinks = [
   },
   {
     href: "/posts",
-    name: "Post",
+    name: "Posts",
   },
 ];
