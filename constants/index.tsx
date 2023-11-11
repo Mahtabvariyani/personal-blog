@@ -37,26 +37,26 @@ export const links = [
 export const navLinks = [
   {
     href: "/",
-    name:  " اصلی",
+    name: " main",
   },
   {
     href: "/questions",
-    name: "!سوال ها ",
+    name: "questions",
   },
   {
-    href: "/practices",
-    name: " !تمرین ها ",
+    href: "practices",
+    name: " Practices ",
   },
   {
-    href: "/learn",
-    name: "دارم یاد میگیرم",
+    href: "learn",
+    name: "learn",
   },
   {
-    href: "/learned",
-    name: "باد گرفتم",
+    href: "learned",
+    name: "learned",
   },
   {
-    href: "/posts",
-    name: "پست ها",
+    href: "posts",
+    name: "Post",
   },
 ];
