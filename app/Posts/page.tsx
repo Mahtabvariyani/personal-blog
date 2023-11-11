@@ -39,11 +39,11 @@ export default async function page() {
               >
                 <div>
                   <h3 className="text-2xl font-bold leading-8 tracking-tight text-white ">
-{post.title}
+                    {post.title}
                   </h3>
                 </div>
                 <p className="text-white prose max-w-none line-clam-2">
-{post.overview}
+                  {post.overview}
                 </p>
               </Link>
             </article>

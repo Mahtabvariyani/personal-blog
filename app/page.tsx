@@ -5,7 +5,6 @@ import { quotes } from "@/constants";
 export default function Home() {
   return (
     <div>
-      new
       <MyRules/>
       <Quote quotes={quotes} />
     </div>

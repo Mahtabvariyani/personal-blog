@@ -40,23 +40,23 @@ export const navLinks = [
     name:  " اصلی",
   },
   {
-    href: "/Questions",
+    href: "/questions",
     name: "!سوال ها ",
   },
   {
-    href: "/Practices",
+    href: "/practices",
     name: " !تمرین ها ",
   },
   {
-    href: "/Learn",
+    href: "/learn",
     name: "دارم یاد میگیرم",
   },
   {
-    href: "/Learned",
+    href: "/learned",
     name: "باد گرفتم",
   },
   {
-    href: "/Posts",
+    href: "/posts",
     name: "پست ها",
   },
 ];
