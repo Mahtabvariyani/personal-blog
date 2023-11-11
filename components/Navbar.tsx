@@ -10,7 +10,7 @@ const Navbar = () => {
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <Link href={link.href} passHref>
+                <Link href={link.href}>
                 {link.name}
                 </Link>
               </li>

@@ -37,23 +37,19 @@ export const links = [
 export const navLinks = [
   {
     href: "/",
-    name: " main",
+    name: "Main",
   },
   {
-    href: "/questions",
-    name: "questions",
+    href: "/home",
+    name: "Home",
   },
   {
-    href: "/practices",
-    name: " Practices ",
+    href: "/test",
+    name: " Test ",
   },
   {
-    href: "/learn",
-    name: "learn",
-  },
-  {
-    href: "/learned",
-    name: "learned",
+    href: "/important",
+    name: "Important",
   },
   {
     href: "/posts",
