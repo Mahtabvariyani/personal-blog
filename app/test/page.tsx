@@ -3,9 +3,9 @@ import HideShowButton from "@/components/HideShowButton";
 
 const page = () => {
   return (
-    <div className="h-[70vh] flex">
+    <div className="h-[70vh] flex flex-row">
     <HideShowButton/>
-    practices
+    
     </div>
   );
 };
