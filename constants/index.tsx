@@ -40,23 +40,23 @@ export const navLinks = [
     name: " main",
   },
   {
-    href: "questions",
+    href: "/questions",
     name: "questions",
   },
   {
-    href: "practices",
+    href: "/practices",
     name: " Practices ",
   },
   {
-    href: "learn",
+    href: "/learn",
     name: "learn",
   },
   {
-    href: "learned",
+    href: "/learned",
     name: "learned",
   },
   {
-    href: "posts",
+    href: "/posts",
     name: "Post",
   },
 ];
