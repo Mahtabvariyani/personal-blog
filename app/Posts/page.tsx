@@ -19,7 +19,7 @@ export interface post {
   _createAt: string;
 }
 
-export default async function page() {
+export default async function posts() {
   const data = (await getData()) as post[];
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
