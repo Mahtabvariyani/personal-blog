@@ -52,7 +52,7 @@ export const navLinks = [
     name: "Important",
   },
   {
-    href: "/posts",
+    href: "/post",
     name: "Posts",
   },
 ];
