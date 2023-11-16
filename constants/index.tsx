@@ -55,4 +55,11 @@ export const navLinks = [
     href: "/post",
     name: "Posts",
   },
+  {
+    href: "/addTopic",
+    name: "Todos",
+  },{
+    href:"/show",
+    name:'Show List'
+  }
 ];

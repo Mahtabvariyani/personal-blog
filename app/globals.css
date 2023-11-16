@@ -11,8 +11,9 @@ body {
     rgb(7, 46, 79) 100%
   );
 }
-
-
+.__next{
+  background-color: rebeccapurple;
+}
 
 .bgFirst{
   background-color: rgb(173, 46, 236);
