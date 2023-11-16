@@ -19,15 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider
-    
-    appearance={{
-      baseTheme: dark,
-      signIn: { baseTheme: neobrutalism },
-    }}
 
-    
-    >
       <html lang="en">
         <body className={inter.className}>
           <Navbar />
@@ -36,6 +28,6 @@ export default function RootLayout({
           <Footer />
         </body>
       </html>
-    </ClerkProvider>
+
   );
 }
