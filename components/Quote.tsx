@@ -14,36 +14,40 @@ type QuoteProps = {
 
 const Quote: React.FC<QuoteProps> = ({ quotes }) => {
   return (
-    <div className="flex flex-wrap items-center justify-center">
-    {quotes.map((quote) => (
-      <div key={quote.id}>
-        <div
-          className={`group relative  ${quote.bg} cursor-pointer overflow-hidden  backdrop-blur-lg px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10`}
-        >
-            <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-200 transition-all duration-300 group-hover:scale-[10]"></span>
-            <div className="relative z-10 mx-auto max-w-md">
-              <span className="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400">
-                <LuQuote />
-              </span>
-              <div className="space-y-6 pt-5 text-bold leading-7 text-gray-200 transition-all duration-300 group-hover:text-black/90 ">
-                <p>{quote.SaidQuote}</p>
-              </div>
-              <div className="pt-5 text-base font-semibold leading-7">
-                <p>
-                  <a
-                    href="#"
-                    className="text-orange-200 transition-all duration-300 group-hover:text-purple-700"
-                  >
-                    {quote.name}
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
+    <div className="py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            Deploy faster
+          </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-orange-300 sm:text-4xl">
+            Everything you need to deploy your app
+          </p>
+          <p className="mt-6 text-lg leading-8 text-teal-300">
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+            In mi viverra elit nunc.
+          </p>
         </div>
-      ))}
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            {quotes.map((feature) => (
+              <div key={feature.id} className="relative pl-16">
+                <dt className="text-base font-semibold leading-7 text-red-300">
+                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <LuQuote className="h-6 w-6 text-yellow-300" aria-hidden="true" />
+                </div>
+                {feature.name}
+              </dt>
+                <dd className="mt-2 text-base leading-7 text-gray-200">
+                  {feature.SaidQuote}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
     </div>
   );
-};
-
+}
 export default Quote;

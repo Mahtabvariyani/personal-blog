@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^0.0.0-insiders.c2096b0",
     "@portabletext/react": "^3.0.11",
     "@react-icons/all-files": "^4.1.0",
     "@sanity/vision": "^3.19.2",
     "dotenv": "^16.3.1",
+    "heroicons-react": "^1.4.1",
     "lottie-react": "^2.4.0",
     "mongodb": "^6.2.0",
     "mongoose": "^8.0.1",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { client } from "../lib/sanity";
 import { Post } from "../lib/interface";
-import LottieePage from '@/components/Lottiee'
+import LottieePage from "@/components/Lottiee";
 
 async function getData() {
   const query = `*[_type == "post"]`;
@@ -15,13 +15,13 @@ export default async function IndexPage() {
 
   return (
     <>
-      <div className="relative isolate overflow-hidden py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden sm:py-24"> 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-rose-500 sm:text-6xl whitespace-nowrap">
               The posts that I write OR like
             </h2>
-            
+
             <LottieePage />
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

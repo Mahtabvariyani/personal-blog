@@ -1,23 +1,90 @@
+"use client";
 import { navLinks } from "@/constants";
+import { Dialog } from "@headlessui/react";
 import Link from "next/link";
-import React from "react";
+import { FaRegFolderOpen } from "react-icons/fa6";
+import { MdCloseFullscreen } from "react-icons/md";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <header className="p-8 text-blue-200 items-center">
-      <nav className="flex justify-between items-center w-[92%] mx-auto">
-        <div className="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-          <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link href={link.href}>
-                {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+    <header className=" text-blue-200 items-center flex flex-row ml-10">
+      <nav
+        className="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div className="flex lg:flex-1">
+          <Link href="#" className="-m-1.5 p-1.5">
+            <img className="h-[150px] w-auto" src="/girlll.png" alt="" />
+          </Link>
+        </div>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <FaRegFolderOpen
+              className="h-6 w-6 text-white"
+              aria-hidden="true"
+            />
+          </button>
+        </div>
+        <div className="hidden lg:flex lg:gap-x-12">
+          {navLinks.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-sm font-semibold leading-6 text-blue-200"
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
       </nav>
+      <Dialog
+        as="div"
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
+        <div className="fixed inset-0 z-50" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-fuchsia-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex items-center justify-between">
+            <Link href="#" className="-m-1.5 p-1.5">
+              <img className="h-[150px] w-auto" src="/girlll.png" alt="" />
+            </Link>
+            <button
+              type="button"
+              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <span className="sr-only">Close menu</span>
+              <MdCloseFullscreen
+                className="h-6 w-6 text-white"
+                aria-hidden="true"
+              />
+            </button>
+          </div>
+          <div className="mt-6 flow-root">
+            <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="space-y-2 py-6">
+                {navLinks.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Dialog.Panel>
+      </Dialog>
     </header>
   );
 };
