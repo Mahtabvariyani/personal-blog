@@ -3,14 +3,11 @@
 @tailwind utilities;
 
 
-
-body {
-  background: radial-gradient(
-    ellipse at bottom,
-    #102946 0%,
-    rgb(7, 46, 79) 100%
-  );
+body{
+  background-color: rgb(53, 12, 66);
 }
+
+
 
 
 .bgFirst{
@@ -18,7 +15,7 @@ body {
   color: black;
 }
 .bgSecond{
-  background-color: rgb(73, 221, 107);
+  background-color: rgb(23, 162, 55);
   color: black;
 }
 .bgThird{
@@ -26,7 +23,7 @@ body {
   color: black;
 }
 .bgFourth{
-  background-color: rgb(230, 236, 46);
+  background-color: rgb(175, 181, 7);
   color: black;
 }
 

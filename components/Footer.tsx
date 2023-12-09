@@ -1,47 +1,110 @@
 import Image from 'next/image'
 import React from 'react'
+import { FaIcons } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
-    <div>
-      <div className="border-t-2 mt-6">
-    <div className="max-w-2xl mx-auto text-white py-10">
-        <div className="text-center">
-            <h3 className="text-xl mb-3">There is no  Download for This app </h3>
-            <p className='text-yellow-300 text-extrabold text-2xl'> Was hier steht, ist vollkommener Quatsch. </p>
-            <div className="flex justify-center my-10">
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2  mx-2">
-                    <Image src="https://cdn-icons-png.flaticon.com/512/888/888857.png" className="w-7 md:w-8"alt='image' width={8} height={8}  />
-                    <div className="text-left ml-3">
-                        <p className='text-xs text-gray-200'>Download on </p>
-                        <p className="text-sm md:text-base"> Google Play Store </p>
-                    </div>
-                </div>
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2 mx-2">
-                    <Image 
-                    alt='image'
-                    width={7}
-                    height={7}
-                    
-                    src="https://cdn-icons-png.flaticon.com/512/888/888841.png" className="w-7 md:w-8"/>
-                    <div className="text-left ml-3">
-                        <p className='text-xs text-gray-200'>Download on </p>
-                        <p className="text-sm md:text-base"> Apple Store </p>
-                    </div>
-                </div>
-            </div>
+   
+
+<footer className="">
+    <div className="mx-auto w-full max-w-screen-xl">
+      <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                    <a href="#" className=" hover:underline">About</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Careers</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Brand Center</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Blog</a>
+                </li>
+            </ul>
         </div>
-        <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-            <p className="order-2 md:order-1 mt-8 md:mt-0"> &copy; Beautiful Footer, 2021. </p>
-            <div className="order-1 md:order-2">
-                <span className="px-2">About us</span>
-                <span className="px-2 border-l">Contact us</span>
-                <span className="px-2 border-l">Privacy Policy</span>
-            </div>
+        <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Discord Server</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Twitter</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Facebook</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Privacy Policy</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Licensing</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">iOS</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Android</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">Windows</a>
+                </li>
+                <li className="mb-4">
+                    <a href="#" className="hover:underline">MacOS</a>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+    <div className="px-4 py-6  md:flex md:items-center md:justify-between">
+        <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© Mah. All Rights Reserved.
+        </span>
+        <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            <FaIcons />
+                  <span className="sr-only">Facebook page</span>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <FaIcons />
+                  <span className="sr-only">Discord community</span>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <FaIcons />
+                  <span className="sr-only">Twitter page</span>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <FaIcons />
+                  <span className="sr-only">GitHub account</span>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+               <FaIcons />
+                  <span className="sr-only">Dribbble account</span>
+              </a>
+        </div>
+      </div>
     </div>
+</footer>
+
   )
 }
 
