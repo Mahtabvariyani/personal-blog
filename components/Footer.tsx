@@ -4,7 +4,8 @@ import { FaIcons } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-[10px] z-10 relative pt-16">
+    <footer className=" z-10 relative pt-16">
+      <div className="h-[20vh]" />
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>

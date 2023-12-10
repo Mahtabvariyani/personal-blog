@@ -3,7 +3,7 @@ import HideShowButton from "@/components/HideShowButton";
 
 const page = () => {
   return (
-    <div className="h-[70vh] flex flex-row">
+    <div className="h-[40vh] flex flex-row">
     <HideShowButton/>
     
     </div>

@@ -11,13 +11,13 @@ const Input = ({ handleSearch, setLocation }: InputProps) => {
     <form className="flex items-center md:w-2/4 w-full order-2 md:order-1">
       <input
         type="text"
-        className="w-full rounded-sm p-1 outline-none text-black"
-        placeholder="Search..."
+        className="w-full  rounded-lg p-4 outline-none text-black"
+        placeholder="Tehran..."
         onKeyDown={handleSearch}
         onChange={(e) => setLocation(e.target.value)}
       />
-      <div className="ml-[-25px] text-black cursor-pointer">
-        <IoSearchCircleSharp />
+      <div className="ml-[-55px] text-red-400 cursor-pointer">
+        <IoSearchCircleSharp size={40}  />
       </div>
     </form>
   );
