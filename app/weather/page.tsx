@@ -5,19 +5,16 @@ import WeatherDetails from "@/components/WeatherDetails";
 import WeekForecast from "@/components/WeekForecast";
 import React, { useState } from "react";
 import Lottie from "lottie-react";
-import weather from '@/public/weather.json'
+import weather from "@/public/weather.json";
 import { TiWeatherPartlySunny } from "react-icons/ti";
-
-
 
 export default function Home() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
   const [error, setError] = useState("");
 
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=f25da41d015f4f28873130619230912&q=${location}&days=7&aqi=yes&alerts=yes`;
-  console.log("API Key:", process.env.NEXT_APP_WEATHER_API_KEY);
-  console.log("URL:", url);
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${process.env.NEXT_PUBLIC_NEXT_APP_WEATHER_API_KEY}&q=${location}&days=7&aqi=yes&alerts=yes`;
+
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -41,12 +38,11 @@ export default function Home() {
   if (Object.keys(data).length === 0 && error === "") {
     content = (
       <div className="text-white text-center h-screen flex flex-col items-center justify-center">
-      <h2 className="text-3xl font-semibold mb-4">Weather Page</h2>
-      <div className="text-xl w-[500px]">
-        <Lottie animationData={weather} />
+        <h2 className="text-3xl font-semibold mb-4">Weather Page</h2>
+        <div className="text-xl w-[500px]">
+          <Lottie animationData={weather} />
+        </div>
       </div>
-    </div>
-    
     );
   } else if (error !== "") {
     content = (
