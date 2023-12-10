@@ -15,7 +15,7 @@ export default function Home() {
   const [location, setLocation] = useState("");
   const [error, setError] = useState("");
 
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${process.env.NEXT_PUBLIC_NEXT_APP_WEATHER_API_KEY}&q=${location}&days=7&aqi=yes&alerts=yes`;
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=f25da41d015f4f28873130619230912&q=${location}&days=7&aqi=yes&alerts=yes`;
   console.log("API Key:", process.env.NEXT_APP_WEATHER_API_KEY);
   console.log("URL:", url);
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
