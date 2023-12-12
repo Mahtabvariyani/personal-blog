@@ -65,7 +65,7 @@ export const navLinks = [
   },
   {
     href: "/clock",
-    name: "Clock",
+    name: "Calender",
   },
   {
     href: "/codeeditor",

@@ -9,7 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^0.0.0-insiders.c2096b0",
+    "@fullcalendar/core": "^6.1.10",
+    "@fullcalendar/daygrid": "^6.1.10",
+    "@fullcalendar/interaction": "^6.1.10",
+    "@fullcalendar/react": "^6.1.10",
+    "@fullcalendar/timegrid": "^6.1.10",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "@portabletext/react": "^3.0.11",
     "@react-icons/all-files": "^4.1.0",
     "@sanity/vision": "^3.19.2",

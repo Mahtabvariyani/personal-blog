@@ -1,10 +1,11 @@
 "use client";
 import { navLinks } from "@/constants";
-import { Dialog } from "@headlessui/react";
+import { Dialog } from '@headlessui/react';
 import Link from "next/link";
 import { FaRegFolderOpen } from "react-icons/fa6";
 import { MdCloseFullscreen } from "react-icons/md";
 import React, { useState } from "react";
+
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -2,7 +2,6 @@
 import { footerLinks, profiles } from "@/constants";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-//import Clock from "react-clock";
 import "react-clock/dist/Clock.css";
 import Clock from 'react-live-clock';
 
@@ -23,11 +22,13 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl">
         <div className=" grid grid-cols-2 gap-5 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div>
+        <h2 className="mb-9 text-sm font-semibold text-orange-400 uppercase ">
+Time EU zone
+            </h2>
             <ul className="">
               <li>
-                <div className="hover:underline text-white text-5xl mt-6">
+                <div className="hover:text-red-400 ease-in duration-300  text-gray-400 text-4xl mt-6">
                 <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
-
                 </div>
               </li>
             </ul>
