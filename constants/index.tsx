@@ -36,7 +36,7 @@ export const links = [
 
 export const navLinks = [
   {
-    href: "",
+    href: "/",
     name: "Main",
   },
   {
