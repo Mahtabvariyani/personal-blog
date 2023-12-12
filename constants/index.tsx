@@ -36,7 +36,7 @@ export const links = [
 
 export const navLinks = [
   {
-    href: "/",
+    href: "",
     name: "Main",
   },
   {
@@ -180,3 +180,32 @@ export const posts = [
 ];
 
 
+export const footerLinks = [
+  {
+    name: "Daily Dev",
+    href: "https://app.daily.dev/",
+  },
+  {
+    name: "Hashnode",
+    href: "https://hashnode.com/",
+  },
+  {
+    name: "Code Wars",
+    href: "https://www.codewars.com/",
+  }
+];
+
+export const profiles = [
+  {
+    name: "Protfolio",
+    href: "https://mahtab-variyani-profile.vercel.app/",
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/mahvariyani/",
+  },
+  {
+    name: "Github",
+    href: "https://github.com/Mahtabvariyani",
+  },
+];
