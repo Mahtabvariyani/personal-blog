@@ -1,34 +1,29 @@
-"use client";
+"use client"
 import { footerLinks, profiles } from "@/constants";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 import "react-clock/dist/Clock.css";
-import Clock from 'react-live-clock';
+import Clock from "react-live-clock";
+//import dynamic from 'next/dynamic';
 
+//const Clock = dynamic(() => import('react-live-clock'), { ssr: false });
 
 export default function Footer() {
-  const [value, setValue] = useState(new Date());
-  useEffect(() => {
-    const interval = setInterval(() => setValue(new Date()), 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
   return (
     <footer className=" z-10 relative pt-16">
       <div className="h-[20vh]" />
       <div className="mx-auto w-full max-w-screen-xl">
         <div className=" grid grid-cols-2 gap-5 px-4 py-6 lg:py-8 md:grid-cols-4">
-        <div>
-        <h2 className="mb-9 text-sm font-semibold text-orange-400 uppercase ">
-Time EU zone
+          <div>
+            <h2 className="mb-9 text-sm font-semibold text-orange-400 uppercase ">
+              Time EU zone
             </h2>
             <ul className="">
               <li>
-                <div className="hover:text-red-400 ease-in duration-300  text-gray-400 text-4xl mt-6">
-                <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+                <div className="hover:text-red-400 ease-in duration-300  text-gray-400 text-xl mt-6">
+                  <Clock
+                      //date={'1997-12-31T14:15:23+01:00'}
+                    format={"dddd, MMMM Mo, h:mm:ss"}
+                  />
                 </div>
               </li>
             </ul>
@@ -67,8 +62,6 @@ Time EU zone
               </ul>
             ))}
           </div>
-
-          
         </div>
       </div>
     </footer>

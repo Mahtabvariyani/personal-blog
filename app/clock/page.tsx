@@ -1,4 +1,4 @@
-import Calculator from '@/components/Calculator'
+import Calculator from '@/components/Calender'
 import React from 'react'
 
 const page = () => {
