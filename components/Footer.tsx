@@ -1,11 +1,9 @@
-"use client"
+"use client";
 import { footerLinks, profiles } from "@/constants";
 import Link from "next/link";
 import "react-clock/dist/Clock.css";
 import Clock from "react-live-clock";
-//import dynamic from 'next/dynamic';
 
-//const Clock = dynamic(() => import('react-live-clock'), { ssr: false });
 
 export default function Footer() {
   return (
@@ -19,11 +17,14 @@ export default function Footer() {
             </h2>
             <ul className="">
               <li>
-                <div className="hover:text-red-400 ease-in duration-300  text-gray-400 text-xl mt-6">
+                <div className="hover:text-red-400 ease-in duration-300  text-gray-400 text-lg mt-6">
                   <Clock
-                      //date={'1997-12-31T14:15:23+01:00'}
-                    format={"dddd, MMMM Mo, h:mm:ss"}
+                    format={"dddd "}
                   />
+                  <br />
+                  <Clock format={"MMMM Mo"} />
+                  <br />
+                  <Clock format={"h:mm"} />
                 </div>
               </li>
             </ul>
