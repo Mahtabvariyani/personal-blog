@@ -70,7 +70,10 @@ export const navLinks = [
   {
     href: "/codeeditor",
     name: "Code-Editor",
-  },
+  },{
+    href:"/Chatbot",
+    name:"Chat-Bot"
+  }
 ];
 
 export const posts = [
