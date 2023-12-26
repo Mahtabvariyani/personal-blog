@@ -70,118 +70,139 @@ export const navLinks = [
   {
     href: "/codeeditor",
     name: "Code-Editor",
-  },{
-    href:"/Chatbot",
-    name:"Chat-Bot"
-  }
+  },
+  {
+    href: "/Chatbot",
+    name: "Chat-Bot",
+  },
 ];
+
+
 
 export const posts = [
   {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
+    id: 11,
+    border: "border-teal-500",
+    bg:'natural',
+    title: "Natural life",
+    href: "https://github.com/Mahtabvariyani/NaturalLife",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  // More posts...
-];
+    "NaturalLife Store is a web application that allows a family (Farm FamilyHack) in a village to sell their products online. Each season brings different offers and products for users to browse and order. The website also provides weather information using an API and allows both registered and non-registered users to contact the family.",
 
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "Natural Life",
+      role: "Github Source Code",
+      href: "https://github.com/Mahtabvariyani/NaturalLife",
+    },
+  },
+  {
+    id: 12,
+    border: "border-teal-500",
+    bg:'api',
+    title: "API",
+    href: "https://labtop-blog.vercel.app/",
+    description:
+    "An interconnected web application with diverse pages, each linked to various APIs for comprehensive testing and functionality. Explore different API integrations across each page, showcasing the dynamic interaction with varied external services.",
+
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "Api App",
+      role: " Github Source Code",
+      href: "https://github.com/Mahtabvariyani/APi",
+    },
+  },
+  {
+    id: 1,
+    border: "border-teal-500",
+    bg:'wecode',
+    title: "We Code",
+    href:       "https://we-dev.vercel.app/sign-up?redirect_url=https%3A%2F%2Fwe-dev.vercel.app%2F",
+    description:
+    "ConnectDev is a collaborative platform designed for developers to connect, communicate, collaborate, and code together. It offers a space for developers to ask questions, share knowledge, and work on coding projects in real-time. With built-in authentication powered by Clerk, users can create or join communities of up to 5 members to work together seamlessly.",
+
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "WeCode App",
+      role: "Github Source Code",
+      href: "https://github.com/Mahtabvariyani/WeCode",
+    },
+  },
+  {
+    id: 1,
+    border: "border-teal-500",
+    bg:'bg-Aapi',
+    title: "Renting App",
+    href: "https://carrenting-app.vercel.app/",
+    description:
+    "This is a small Renting app that is connected to the Api so the user can search and find a car to rent ",
+
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "Renting Car App",
+      role: " Github Source Code",
+      href: "https://github.com/Mahtabvariyani/Renting-App",
+    },
+  },
+  {
+    id: 1,
+    border: "border-teal-500",
+    bg:'ski',
+    title: "Ski Wear Shop",
+    href: "https://skiwearshop.vercel.app/",
+    description:
+    "A Small Commerce App without Authentication for justy trying and testing the App having a Stripe testing payment and adding the Products and APi  with Sanity",
+
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "Ski-Wear app",
+      role: "Github Source Code",
+      href: "https://github.com/Mahtabvariyani/skiwearshop",
+    
+    },
+  },
+  {
+    id: 1,
+    border: "border-teal-500",
+    bg:'fendous',
+    title: "Fendous Website",
+    href: "https://chat-bot-landing-page.vercel.app/",
+    description:
+    "A Website for Fendous Company in Denmark which  i  created it  according to their needs and requests",
+
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "Fendous App",
+      role: "Github Source Code",
+      href: "https://github.com/Mahtabvariyani/Chat-bot-Landing-Page",
+
+    },
+  },
+  {
+    id: 1,
+    border: "border-teal-500",
+    bg:'bg-Quiz',
+    title: "Quiz App",
+    href: "https://coding-quiz-nine.vercel.app/",
+    description:
+    "few Days back i was trying to Find an app or a website to do few Quiz about JavaScript or TypeScript or ... i didnt find so i made it myself (Its still not Completed im working on it)",
+
+
+    category: { title: "Live", href: "#" },
+    author: {
+      name: "Quiz App",
+      role: "Github Source Code",
+      href: "https://github.com/Mahtabvariyani/CodingQuiz",
+     
+    },
+  },
+];
 
 export const footerLinks = [
   {
@@ -195,7 +216,7 @@ export const footerLinks = [
   {
     name: "Code Wars",
     href: "https://www.codewars.com/",
-  }
+  },
 ];
 
 export const profiles = [

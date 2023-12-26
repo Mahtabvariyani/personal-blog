@@ -3,12 +3,13 @@ import { footerLinks, profiles } from "@/constants";
 import Link from "next/link";
 import "react-clock/dist/Clock.css";
 import Clock from "react-live-clock";
+import wecode from '@/public/wecode.png'
 
 
 export default function Footer() {
   return (
-    <footer className=" z-10 relative pt-16">
-      <div className="h-[20vh]" />
+    <footer className=" z-10 relative">
+      <div className="mt-[40vh]" />
       <div className="mx-auto w-full max-w-screen-xl">
         <div className=" grid grid-cols-2 gap-5 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
@@ -17,7 +18,7 @@ export default function Footer() {
             </h2>
             <ul className="">
               <li>
-                <div className="hover:text-red-400 ease-in duration-300  text-gray-400 text-lg mt-6">
+                <div className="hover:text-red-400  ease-in duration-300  text-gray-400 text-lg mt-6">
                   <Clock
                     format={"dddd "}
                   />
