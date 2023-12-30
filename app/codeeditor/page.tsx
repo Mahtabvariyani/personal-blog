@@ -1,9 +1,14 @@
-import React from 'react'
+"use client";
+import Lottie from "lottie-react";
+import React from "react";
+import finding from "@/public/finding.json";
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className="pt-20 -mb-10">
+      <Lottie animationData={finding} className="h-[20rem]" />
+    </div>
+  );
+};
 
-export default page
+export default Page;

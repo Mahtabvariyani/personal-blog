@@ -1,24 +1,12 @@
-
-import Image from "next/image";
+"use client";
+import Lottie from "lottie-react";
 import React from "react";
+import finding from "@/public/finding.json";
 
 const Page = () => {
   return (
-    <div className="flex justify-center items-center bg-teal-500">
-      <div className="hero bg-base-200">
-        <div className="hero-content text-center">
-          <div className="max-w-md">
-            {/* <h1 className="text-5xl font-bold">Hello there</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p> */}
-
-            <Image alt="image" src="/Hero.png" height={400} width={300} />
-          </div>
-        </div>
-      </div>
+    <div className="pt-20 -mb-10">
+      <Lottie animationData={finding} className="h-[20rem]" />
     </div>
   );
 };
