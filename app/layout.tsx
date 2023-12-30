@@ -25,11 +25,7 @@ export default function RootLayout({
         <div className="firefly"></div>
         <div className="firefly"></div>
         <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
+  
         <Navbar />
    
   
@@ -38,7 +34,13 @@ export default function RootLayout({
         {children}
         <SpeedInsights />
 
+
         <Footer />
+        <div className="firefly"></div>
+        <div className="firefly"></div>
+        <div className="firefly"></div>
+        <div className="firefly"></div>
+        <div className="firefly"></div>
      
       </body>
     </html>
