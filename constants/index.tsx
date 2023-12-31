@@ -69,7 +69,7 @@ export const navLinks = [
   },
   {
     href: "/Todo",
-    name: "Todo",
+    name: "Message",
   },
   {
     href: "/Chatbot",

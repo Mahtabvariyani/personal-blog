@@ -124,7 +124,7 @@ export default function Home() {
   }, [messages]);
 
   return (
-    <div className="min-h-screen bg-indigo-900">
+    <div className="min-h-screen ">
       {messages.length !== 0 ? (
         <div className="pb-32 pt-5 space-y-5 w-[75%] mx-auto relative">
           {messages.map((message) => (

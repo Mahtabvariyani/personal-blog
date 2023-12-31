@@ -1,6 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { SiGooglemessages } from "react-icons/si";
+import Lottie from "lottie-react";
+import ghost from '@/public/ghost.json'
+
+
 
 type Todo = {
   _id: string;
@@ -90,13 +94,13 @@ const Page = () => {
   };
   return (
     <div className="relative flex flex-col  justify-center items-center isolate px-6 pt-14 lg:px-8">
-      <h1 className="text-2xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-        Writing a Message To me
-      </h1>
+      <h4 className="firefly text-xl font-bold tracking-tight text-yellow-100 sm:text-6xl">
+        WriteSomething
+      </h4>
 
-      <div className="mt-10 flex items-center justify-center gap-x-6">
+      <div className=" flex items-center justify-center gap-x-6">
         {editTodo ? (
-          <div  className="mx-auto mt-16 max-w-xl sm:mt-20">
+          <div className="mx-auto mt-16 max-w-xl sm:mt-20">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
@@ -124,7 +128,7 @@ const Page = () => {
             </div>
           </div>
         ) : (
-          <div className="mx-auto mt-16 max-w-xl sm:mt-20">
+          <div className="mx-auto  max-w-xl sm:mt-20">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
@@ -151,9 +155,14 @@ const Page = () => {
           </div>
         )}
       </div>
-      {isLoading && <p className="text-white mt-10">is Loading...</p>}
+      {isLoading && <div className="text-white mt-10">
+        
+      <Lottie animationData={ghost} className="h-[15rem]" />
+        </div>}
       {!isLoading && todo && todo.length == 0 ? (
-        <div className="text-white mt-10">Nothing To show</div>
+        <div className="text-white mt-10">
+          <Lottie animationData={ghost} className="h-[15rem]" />
+        </div>
       ) : (
         <div className="text-white mt-7">
           {!isLoading &&
