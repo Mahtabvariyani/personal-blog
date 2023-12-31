@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { SiGooglemessages } from "react-icons/si";
 
@@ -45,7 +45,7 @@ const Page = () => {
     console.log("data", data);
     setTodo([...todo, data]);
     setnewTodoText("");
-    router.push('/Todo');
+    router.reload();
   };
 
   const handleEdit = (dos: Todo) => {
@@ -80,7 +80,7 @@ const Page = () => {
       );
 
       setEditTodo(null);
-      router.push('/Todo');
+      router.reload();
     }
     
   };
@@ -98,7 +98,7 @@ const Page = () => {
     if(response.status === 200){
       setTodo(todo.filter((dos:Todo) => dos._id !== id))
     }
-    router.push('/Todo');
+    router.reload();
   };
   return (
     <div className="relative flex flex-col  justify-center items-center isolate px-6 pt-14 lg:px-8">
