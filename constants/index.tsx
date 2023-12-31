@@ -68,8 +68,8 @@ export const navLinks = [
     name: "Calender",
   },
   {
-    href: "/codeeditor",
-    name: "Code-Editor",
+    href: "/Todo",
+    name: "Todo",
   },
   {
     href: "/Chatbot",
