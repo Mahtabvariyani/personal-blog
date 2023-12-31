@@ -9,8 +9,6 @@ type Todo = {
 };
 
 const Page = () => {
-
-
   const [isLoading, setLoading] = useState(true);
   const [todo, setTodo] = useState<Todo[]>([]);
   const [newTodoText, setnewTodoText] = useState<string>("");
@@ -35,9 +33,7 @@ const Page = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        
       }
-      
     );
     const data = await response.json();
     console.log("data", data);
@@ -47,7 +43,6 @@ const Page = () => {
 
   const handleEdit = (dos: Todo) => {
     setEditTodo(dos);
-    
   };
 
   const handleSave = async () => {
@@ -71,14 +66,11 @@ const Page = () => {
       setTodo(
         todo.map((todo: Todo) =>
           todo._id === editTodo._id ? { ...todo, text: editTodo.text } : todo
-          
         )
-        
       );
 
       setEditTodo(null);
     }
-    
   };
 
   const deleteTodo = async (id: string) => {
@@ -90,9 +82,10 @@ const Page = () => {
         headers: {
           "Content-Type": "application/json",
         },
-      });
-    if(response.status === 200){
-      setTodo(todo.filter((dos:Todo) => dos._id !== id))
+      }
+    );
+    if (response.status === 200) {
+      setTodo(todo.filter((dos: Todo) => dos._id !== id));
     }
   };
   return (
@@ -104,18 +97,12 @@ const Page = () => {
       <div className="mt-10 flex items-center justify-center gap-x-6">
         {editTodo ? (
           <form
-            action="#"
+            
             method="POST"
             className="mx-auto mt-16 max-w-xl sm:mt-20"
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-600"
-                >
-                  Task
-                </label>
                 <div className="mt-2.5">
                   <input
                     type="text"
@@ -142,8 +129,7 @@ const Page = () => {
           </form>
         ) : (
           <form
-            action="#"
-            method="POST"
+           
             className="mx-auto mt-16 max-w-xl sm:mt-20"
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -191,7 +177,7 @@ const Page = () => {
                 className="px-[80px] bg-blue-900 list-none flex py-2 rounded-lg my-3 hover:text-pink-300  text-lg w-full justify-between"
               >
                 <div className="flex flex-row justify-start items-start w-8/12">
-                <SiGooglemessages size={30} className="text-pink-200" />
+                  <SiGooglemessages size={30} className="text-pink-200" />
 
                   <span
                     className={`${
