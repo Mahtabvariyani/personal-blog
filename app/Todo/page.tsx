@@ -96,11 +96,7 @@ const Page = () => {
 
       <div className="mt-10 flex items-center justify-center gap-x-6">
         {editTodo ? (
-          <form
-            
-            method="POST"
-            className="mx-auto mt-16 max-w-xl sm:mt-20"
-          >
+          <form method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
@@ -128,18 +124,9 @@ const Page = () => {
             </div>
           </form>
         ) : (
-          <form
-           
-            className="mx-auto mt-16 max-w-xl sm:mt-20"
-          >
+          <form className="mx-auto mt-16 max-w-xl sm:mt-20">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-200"
-                >
-                  Task
-                </label>
                 <div className="mt-2.5">
                   <input
                     type="text"
@@ -158,15 +145,15 @@ const Page = () => {
                 onClick={addTask}
                 className="block w-full rounded-md bg-blue-800 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Add Task
+                Post Message
               </button>
             </div>
           </form>
         )}
       </div>
-      {isLoading && <p className="text-white">is Loading...</p>}
+      {isLoading && <p className="text-white mt-10">is Loading...</p>}
       {!isLoading && todo && todo.length == 0 ? (
-        <div className="text-white">No Todo To show</div>
+        <div className="text-white mt-10">Nothing To show</div>
       ) : (
         <div className="text-white mt-7">
           {!isLoading &&
