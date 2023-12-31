@@ -74,12 +74,15 @@ const Page = () => {
       setTodo(
         todo.map((todo: Todo) =>
           todo._id === editTodo._id ? { ...todo, text: editTodo.text } : todo
+          
         )
+        
       );
 
       setEditTodo(null);
+      router.push('/');
     }
-    router.push('/');
+    
   };
 
   const deleteTodo = async (id: string) => {
