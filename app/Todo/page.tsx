@@ -45,12 +45,12 @@ const Page = () => {
     console.log("data", data);
     setTodo([...todo, data]);
     setnewTodoText("");
-    router.push('/');
+    router.push('/Todo');
   };
 
   const handleEdit = (dos: Todo) => {
     setEditTodo(dos);
-    router.push('/');
+    
   };
 
   const handleSave = async () => {
@@ -80,7 +80,7 @@ const Page = () => {
       );
 
       setEditTodo(null);
-      router.push('/');
+      router.push('/Todo');
     }
     
   };
@@ -98,7 +98,7 @@ const Page = () => {
     if(response.status === 200){
       setTodo(todo.filter((dos:Todo) => dos._id !== id))
     }
-    router.push('/');
+    router.push('/Todo');
   };
   return (
     <div className="relative flex flex-col  justify-center items-center isolate px-6 pt-14 lg:px-8">
