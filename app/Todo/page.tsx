@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { SiGooglemessages } from "react-icons/si";
 
@@ -9,6 +10,9 @@ type Todo = {
 };
 
 const Page = () => {
+
+  const router = useRouter();
+
   const [isLoading, setLoading] = useState(true);
   const [todo, setTodo] = useState<Todo[]>([]);
   const [newTodoText, setnewTodoText] = useState<string>("");
@@ -33,16 +37,20 @@ const Page = () => {
         headers: {
           "Content-Type": "application/json",
         },
+        
       }
+      
     );
     const data = await response.json();
     console.log("data", data);
     setTodo([...todo, data]);
     setnewTodoText("");
+    router.push('/');
   };
 
   const handleEdit = (dos: Todo) => {
     setEditTodo(dos);
+    router.push('/');
   };
 
   const handleSave = async () => {
@@ -71,6 +79,7 @@ const Page = () => {
 
       setEditTodo(null);
     }
+    router.push('/');
   };
 
   const deleteTodo = async (id: string) => {
@@ -86,6 +95,7 @@ const Page = () => {
     if(response.status === 200){
       setTodo(todo.filter((dos:Todo) => dos._id !== id))
     }
+    router.push('/');
   };
   return (
     <div className="relative flex flex-col  justify-center items-center isolate px-6 pt-14 lg:px-8">
