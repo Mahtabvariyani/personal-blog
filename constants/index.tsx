@@ -115,7 +115,6 @@ export const posts = [
     },
     techs: {
       name: "Tech",
-
       Language: "TypeScript",
       FrontEnd: "nextjs",
       UI: "Tailwind CSS",

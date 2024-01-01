@@ -29,7 +29,7 @@ interface Post {
     href: string;
   };
   techs: {
-    name:string;
+    name: string;
     Language: string;
     FrontEnd: string;
     UI: string;
@@ -44,18 +44,36 @@ const MoreInfo = ({ post }: MoreInfoProps) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant="outline" className="rounded-full bg-blue-400	 text-white">{post.techs.name}</Button>
+        <Button
+          variant="outline"
+          className="rounded-full bg-blue-400	 text-white"
+        >
+          {post.techs.name}
+        </Button>
       </AlertDialogTrigger>
-      <AlertDialogContent className="backdrop-blur-sm bg-white/30">
+      <AlertDialogContent className="backdrop-blur-sm bg-white/30 border-none ">
         <AlertDialogHeader>
-          <AlertDialogTitle className="text-blue-200">The Technologies Used in The Projects</AlertDialogTitle>
-          <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+          <AlertDialogTitle className="text-blue-200">
+            The Technologies Used in The {post.title}
+          </AlertDialogTitle>
+          <AlertDialogDescription className="text-white flex">
+            <p className="text-green-500 mr-2">Front-End:</p> {post.techs.Language}
+          </AlertDialogDescription>
+          <AlertDialogDescription className="text-white flex">
+            <p className="text-indigo-500 mr-2">Back-End:</p>
+            {post.techs.FrontEnd}
+          </AlertDialogDescription>
+          <AlertDialogDescription className="text-white flex">
+            <p className="text-cyan-500 mr-2">
+            UI:
+            </p>
+            {post.techs.UI}
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel className="bg-gray-300 text-blue-700">Close</AlertDialogCancel>
+          <AlertDialogCancel className="bg-gray-300 text-blue-700">
+            Close
+          </AlertDialogCancel>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
