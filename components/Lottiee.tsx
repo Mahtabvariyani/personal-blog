@@ -6,9 +6,7 @@ import fourth from "@/public/fourth.json";
 import fun from "@/public/fun.json";
 
 const lottieIcons = [
-  {
-    data: joght,
-  },
+
   {
     data: fourth,
   },
@@ -19,7 +17,7 @@ const lottieIcons = [
 
 const Lottiee = () => {
   return (
-    <div className="flex flex-col mt-8 md:flex-row md:items-center bg-white">
+    <div className="flex flex-col mt-8 md:flex-row md:items-center ">
       {lottieIcons.map((icon, index) => (
         <div
         

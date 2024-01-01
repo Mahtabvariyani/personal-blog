@@ -178,7 +178,8 @@ export default function Home() {
         </div>
       ) : (
         <div className="w-full flex justify-center pt-32">
-          <div className="w-[400px] text-2xl text-white">
+          <div className="w-[400px] text-2xl text-white ">
+            
             Ask Anything from AI
           <Lottie animationData={Chatbot} />
           </div>

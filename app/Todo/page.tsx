@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { SiGooglemessages } from "react-icons/si";
 import Lottie from "lottie-react";
 import ghost from '@/public/ghost.json'
+import { Button } from "@/components/ui/button"
+
 
 
 
@@ -95,7 +97,7 @@ const Page = () => {
   return (
     <div className="relative flex flex-col  justify-center items-center isolate px-6 pt-14 lg:px-8">
       <h4 className="firefly text-xl font-bold tracking-tight text-yellow-100 sm:text-6xl">
-        WriteSomething
+        Write_Something
       </h4>
 
       <div className=" flex items-center justify-center gap-x-6">
@@ -118,13 +120,14 @@ const Page = () => {
               </div>
             </div>
             <div className="mt-10">
-              <button
+
+              <Button
                 type="submit"
                 onClick={handleSave}
                 className="block w-full rounded-md bg-blue-800 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Update Task
-              </button>
+              </Button>
             </div>
           </div>
         ) : (
@@ -144,13 +147,13 @@ const Page = () => {
               </div>
             </div>
             <div className="mt-10">
-              <button
+              <Button
                 type="submit"
                 onClick={addTask}
                 className="block w-full rounded-md bg-blue-800 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Post Message
-              </button>
+              </Button>
             </div>
           </div>
         )}
@@ -170,7 +173,7 @@ const Page = () => {
             todo.map((dos: Todo) => (
               <li
                 key={dos._id}
-                className="px-[80px] bg-blue-900 list-none flex py-2 rounded-lg my-3 hover:text-pink-300  text-lg w-full justify-between"
+                className="px-[100px] bg-blue-900 list-none flex py-2 rounded-lg my-3 hover:text-pink-300  text-lg w-full justify-between"
               >
                 <div className="flex flex-row justify-start items-start w-8/12">
                   <SiGooglemessages size={30} className="text-pink-200" />
@@ -184,18 +187,18 @@ const Page = () => {
                   </span>
                 </div>
                 <div className="w-4/12 md:w-3/12 flex">
-                  <button
+                  <Button
                     onClick={() => handleEdit(dos)}
                     className="text-sky-400 uppercase md:text-base px-3  hover:text-sky-100"
                   >
                     Edit
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     onClick={() => deleteTodo(dos._id)}
-                    className="text-rose-400 uppercase md:text-base px-3  hover:text-rose-100"
+                    className="text-rose-400 uppercase md:text-base px-3  hover:text-rose-100 ml-3"
                   >
                     Delete
-                  </button>
+                  </Button>
                 </div>
               </li>
             ))}

@@ -13,12 +13,12 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl">
         <div className=" grid grid-cols-2 gap-5 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-            <h2 className="mb-9 text-sm font-semibold text-orange-400 uppercase ">
+            <h2 className="mb-9 text-sm font-semibold text-blue-400 uppercase ">
               Time EU zone
             </h2>
             <ul className="">
               <li>
-                <div className="hover:text-red-400  ease-in duration-300  text-gray-400 text-lg mt-6">
+                <div className="hover:text-pink-600  ease-in duration-300  text-gray-400 text-lg mt-6">
                   <Clock
                     format={"dddd "}
                   />
@@ -31,7 +31,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-orange-400 uppercase ">
+            <h2 className="mb-6 text-sm font-semibold text-blue-400 uppercase ">
               My Fav WebSites
             </h2>
             {footerLinks.map((link, index) => (
@@ -48,7 +48,7 @@ export default function Footer() {
             ))}
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-orange-400 uppercase ">
+            <h2 className="mb-6 text-sm font-semibold text-blue-400 uppercase ">
               My Profiles
             </h2>
             {profiles.map((profile, index) => (

@@ -34,48 +34,73 @@ export const links = [
   { linkName: "Fourth", linkHref: "/", bg: "bgFou" },
 ];
 
+export const  components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Main",
+    href: "/",
+    description:
+      "Main Page",
+  },
+  {
+    title: "Home",
+    href: "/home",
+    description:
+      "Still working on It",
+  },
+  {
+    title: "Test",
+    href: "/test",
+    description:
+      "a page for testing Stuff",
+  },
+
+  {
+    title: "Post",
+    href: "/post",
+    description:
+      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+  },
+  {
+    title: "Chatbot",
+    href: "/Chatbot",
+    description:
+      "a chat bot Page connected to The Open Ai",
+  },
+];
+
+
+
 export const navLinks = [
   {
-    href: "/",
-    name: "Main",
-  },
-  {
-    href: "/home",
-    name: "Home",
-  },
-  {
-    href: "/test",
-    name: " Test ",
-  },
-  {
+    title: "Compelete FullStack Projects Page",
     href: "/important",
-    name: "Projects",
-  },
-  {
-    href: "/post",
-    name: "Posts",
+    description: "showcasing my own fullStack Projects using many new Thechnologies and linked Github Source Code and Deployed Link ....",
   },
   {
     href: "/weather",
-    name: "Weather",
+    title: "Weather",
+    description:"Weather API which shows the weather of a city with Details"
   },
   {
     href: "/calculator",
-    name: "Calculator",
+    title: "Calculator",
+    description:"Still Working On it"
   },
   {
     href: "/clock",
-    name: "Calender",
+    title: "Calender",
+    description:"Showcasing a calender from FullCalender Site"
   },
   {
     href: "/Todo",
-    name: "Message",
+    title: "Message me",
+    description:"just a simple test for showinf the Crud Functionality"
   },
-  {
-    href: "/Chatbot",
-    name: "Chat-Bot",
-  },
+
 ];
+
+
+
 
 export const posts = [
   {

@@ -46,7 +46,7 @@ export default async function IndexPage() {
                       className="space-y-3 xl:col-span-3"
                     >
                       <div>
-                        <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+                        <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-200 dark:text-gray-100">
                           {post.title}
                         </h3>
                       </div>
