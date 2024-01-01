@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="firefly"></div>
+      <div className="firefly text-white text-xl">
+      </div>
         <div className="firefly"></div>
         <div className="firefly"></div>
         <div className="firefly"></div>

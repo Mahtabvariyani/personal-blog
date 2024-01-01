@@ -5,7 +5,8 @@ import Link from "next/link";
 import { cn } from "@/utils";
 import { BsFillMenuButtonFill } from "react-icons/bs";
 import { BsMenuAppFill } from "react-icons/bs";
-
+import "react-clock/dist/Clock.css";
+import Clock from "react-live-clock";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -20,20 +21,21 @@ import { components, navLinks } from "@/constants";
 
 export function SecondNavbar() {
   return (
-    <NavigationMenu className="text-blue-200 items-center flex flex-row ml-10 mt-4 ">
+    <NavigationMenu className="text-gray-200 items-center flex flex-row ml-10 mt-4 ">
       <NavigationMenuList>
         <NavigationMenuItem>
           <div className="flex lg:flex-1 ">
             <Link href="#" className="-m-1.5 p-1.5 ">
-              <img className="h-[150px] w-auto " src="/girlll.png" alt="" />
+              <img className="h-[50px] w-auto " src="/mahhlogo.png" alt="" />
             </Link>
           </div>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent flex hover:text-pink-700">
+          <NavigationMenuTrigger className="bg-transparent flex hover:text-gray-700">
             Main <BsFillMenuButtonFill size={15}  className="ml-1 "/>
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-[#010e43] text-blue-200">
+          <NavigationMenuContent className="bg-[#153757] text-gray-200">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
               {components.map((component) => (
                 <ListItem
@@ -41,17 +43,18 @@ export function SecondNavbar() {
                   title={component.title}
                   href={component.href}
                 >
-                  <p className="text-blue-700">{component.description}</p>
+                  <p className="text-blue-300">{component.description}</p>
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent flex hover:text-pink-700">
+          <NavigationMenuTrigger className="bg-transparent flex hover:text-gray-700">
             Project <BsMenuAppFill size={15}  className="ml-1 " />
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-[#010e43] text-blue-200">
+          <NavigationMenuContent className="bg-[#153757] text-gray-200">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {navLinks.map((component) => (
                 <ListItem
@@ -59,7 +62,7 @@ export function SecondNavbar() {
                   title={component.title}
                   href={component.href}
                 >
-                    <p className="text-blue-700">
+                    <p className="text-blue-300">
                         
                   {component.description}
                     </p>
@@ -67,6 +70,10 @@ export function SecondNavbar() {
               ))}
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+       
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
