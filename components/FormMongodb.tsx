@@ -2,7 +2,7 @@
 import { posts } from "@/constants";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineOnlinePrediction } from "react-icons/md";
-import { Moreinfo } from "./MoreInfo";
+import Moreinfo from "./MoreInfo";
 
 
 export default function Example() {
@@ -16,18 +16,15 @@ export default function Example() {
           <p className="mt-2 text-lg leading-8 text-gray-300">
             The projects i did as Practice
           </p>
-          {/* <Lottie animationData={line} className="pt-7" /> */}
           <hr className="mt-7 w-full text-gray-200"   />
 
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post, index) => (
             <article
-              key={index}
-              className={`flex max-w-xl border-2  rounded-[80px] border-gray-300 p-9 flex-col items-start justify-between   `}
-            >
+              key={index} className={`flex max-w-xl border-2  rounded-[80px] border-gray-300 p-9 flex-col items-start justify-between`}>
               <div className="flex items-center gap-x-4 text-xs">
-                <Moreinfo posts={posts} />
+              <Moreinfo  post={post} />
                 <a
                   href={post.href}
                   className="relative z-10 rounded-full  py-1.5 font-medium flex text-white text-lg "

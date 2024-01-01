@@ -34,24 +34,25 @@ export const links = [
   { linkName: "Fourth", linkHref: "/", bg: "bgFou" },
 ];
 
-export const  components: { title: string; href: string; description: string }[] = [
+export const components: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
     title: "Main",
     href: "/",
-    description:
-      "Main Page",
+    description: "Main Page",
   },
   {
     title: "Home",
     href: "/home",
-    description:
-      "Still working on It",
+    description: "Still working on It",
   },
   {
     title: "Test",
     href: "/test",
-    description:
-      "a page for testing Stuff",
+    description: "a page for testing Stuff",
   },
 
   {
@@ -63,44 +64,38 @@ export const  components: { title: string; href: string; description: string }[]
   {
     title: "Chatbot",
     href: "/Chatbot",
-    description:
-      "a chat bot Page connected to The Open Ai",
+    description: "a chat bot Page connected to The Open Ai",
   },
 ];
-
-
 
 export const navLinks = [
   {
     title: "Compelete FullStack Projects Page",
     href: "/important",
-    description: "showcasing my own fullStack Projects using many new Thechnologies and linked Github Source Code and Deployed Link ....",
+    description:
+      "showcasing my own fullStack Projects using many new Thechnologies and linked Github Source Code and Deployed Link ....",
   },
   {
     href: "/weather",
     title: "Weather",
-    description:"Weather API which shows the weather of a city with Details"
+    description: "Weather API which shows the weather of a city with Details",
   },
   {
     href: "/calculator",
     title: "Calculator",
-    description:"Still Working On it"
+    description: "Still Working On it",
   },
   {
     href: "/clock",
     title: "Calender",
-    description:"Showcasing a calender from FullCalender Site"
+    description: "Showcasing a calender from FullCalender Site",
   },
   {
     href: "/Todo",
     title: "Message me",
-    description:"just a simple test for showinf the Crud Functionality"
+    description: "just a simple test for showinf the Crud Functionality",
   },
-
 ];
-
-
-
 
 export const posts = [
   {
@@ -118,6 +113,13 @@ export const posts = [
       role: "Github Source Code",
       href: "https://github.com/Mahtabvariyani/NaturalLife",
     },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
+    },
   },
   {
     id: 12,
@@ -133,6 +135,13 @@ export const posts = [
       name: "Api App",
       role: " Github Source Code",
       href: "https://github.com/Mahtabvariyani/APi",
+    },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
     },
   },
   {
@@ -150,6 +159,13 @@ export const posts = [
       role: "Github Source Code",
       href: "https://github.com/Mahtabvariyani/WeCode",
     },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
+    },
   },
   {
     id: 14,
@@ -165,6 +181,13 @@ export const posts = [
       name: "Renting Car App",
       role: " Github Source Code",
       href: "https://github.com/Mahtabvariyani/Renting-App",
+    },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
     },
   },
   {
@@ -182,6 +205,13 @@ export const posts = [
       role: "Github Source Code",
       href: "https://github.com/Mahtabvariyani/skiwearshop",
     },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
+    },
   },
   {
     id: 17,
@@ -197,6 +227,13 @@ export const posts = [
       name: "Fendous App",
       role: "Github Source Code",
       href: "https://github.com/Mahtabvariyani/Chat-bot-Landing-Page",
+    },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
     },
   },
   {
@@ -214,6 +251,13 @@ export const posts = [
       role: "Github Source Code",
       href: "https://github.com/Mahtabvariyani/CodingQuiz",
     },
+    techs: {
+      name: "Tech",
+
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
+    },
   },
   {
     id: 18,
@@ -229,6 +273,12 @@ export const posts = [
       name: "IT Event App",
       role: "Github Source Code",
       href: "https://github.com/Mahtabvariyani/eventApp",
+    },
+    techs: {
+      name: "Tech",
+      Language: "TypeScript",
+      FrontEnd: "nextjs",
+      UI: "Tailwind CSS",
     },
   },
 ];
