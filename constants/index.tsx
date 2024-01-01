@@ -115,9 +115,9 @@ export const posts = [
     },
     techs: {
       name: "Tech",
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Handlebars , Cloudinary (for media handling)",
+      FrontEnd: "Node.js , Express , Bcrypt , Passport , Nodemailer , Multer , Mongoose ,MongoDB , Morgan ,Axios",
+      UI: "Vanila CSS , Bootstrap",
     },
   },
   {
@@ -138,9 +138,9 @@ export const posts = [
     techs: {
       name: "Tech",
 
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs ,JavaScript",
+      FrontEnd: "API ,Axios",
+      UI: "Tailwind CSS , CSS",
     },
   },
   {
@@ -160,10 +160,9 @@ export const posts = [
     },
     techs: {
       name: "Tech",
-
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs,JavaScript",
+      FrontEnd: "Authentication , MongoDB, Mongoose, Axios ,Redux , Moment ,Clerk",
+      UI: "Tailwind CSS , CSS",
     },
   },
   {
@@ -184,9 +183,9 @@ export const posts = [
     techs: {
       name: "Tech",
 
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs,TypeScript",
+      FrontEnd: "API, Axios",
+      UI: "Tailwind CSS,CSS",
     },
   },
   {
@@ -207,9 +206,9 @@ export const posts = [
     techs: {
       name: "Tech",
 
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs,TypeScript",
+      FrontEnd: "Sanity,Stripe",
+      UI: "Tailwind CSS ,CSS",
     },
   },
   {
@@ -230,9 +229,9 @@ export const posts = [
     techs: {
       name: "Tech",
 
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs,TypeScript",
+      FrontEnd: "MongoDB ,Mongoose ,Authentication, Axios ,API ",
+      UI: "Tailwind CSS , CSS",
     },
   },
   {
@@ -253,9 +252,9 @@ export const posts = [
     techs: {
       name: "Tech",
 
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs,TypeScript",
+      FrontEnd: "-",
+      UI: "Tailwind CSS , CSS",
     },
   },
   {
@@ -275,9 +274,9 @@ export const posts = [
     },
     techs: {
       name: "Tech",
-      Language: "TypeScript",
-      FrontEnd: "nextjs",
-      UI: "Tailwind CSS",
+      Language: "Nextjs,TypeScript",
+      FrontEnd: "Uploadthing, Stripe, MongoDB, Mongoose , Sanity , Clerk",
+      UI: "Tailwind CSS ,CSS",
     },
   },
 ];

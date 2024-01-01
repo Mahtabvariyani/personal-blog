@@ -53,19 +53,19 @@ const MoreInfo = ({ post }: MoreInfoProps) => {
       </AlertDialogTrigger>
       <AlertDialogContent className="backdrop-blur-sm bg-white/30 border-none ">
         <AlertDialogHeader>
-          <AlertDialogTitle className="text-blue-200">
+          <AlertDialogTitle className="text-blue-200 mb-6">
             The Technologies Used in The {post.title}
           </AlertDialogTitle>
-          <AlertDialogDescription className="text-white flex">
-            <p className="text-green-500 mr-2">Front-End:</p> {post.techs.Language}
+          <AlertDialogDescription className="text-white flex p-2">
+            <p className="text-green-500 mr-2 ">Front:</p> {post.techs.Language}
           </AlertDialogDescription>
-          <AlertDialogDescription className="text-white flex">
-            <p className="text-indigo-500 mr-2">Back-End:</p>
+          <AlertDialogDescription className="text-white flex p-2 ">
+            <p className="text-indigo-500 mr-2 ">Back:</p>
             {post.techs.FrontEnd}
           </AlertDialogDescription>
-          <AlertDialogDescription className="text-white flex">
-            <p className="text-cyan-500 mr-2">
-            UI:
+          <AlertDialogDescription className="text-white flex p-2">
+            <p className="text-cyan-500 mr-2 ">
+            Design:
             </p>
             {post.techs.UI}
           </AlertDialogDescription>
