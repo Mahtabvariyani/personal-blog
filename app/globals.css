@@ -2,25 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-html, body {
+html,
+body {
   height: 100%;
 }
+/* 
+
+https://th.bing.com/th/id/OIG.23f_ENm53N2iDvSqq23U?w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn
+*/
 
 body {
-  
-background-color: #153757;
+  background-color: #0d2338;
+}
+
+.apipic {
+  background-image: 
+    url("/dummydata.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px;
 }
 
 .firefly {
   position: fixed;
   left: 50%;
-  
   top: 50%;
   width: 0.4vw;
   height: 0.4vw;
@@ -28,7 +37,8 @@ background-color: #153757;
   animation: ease 200s alternate infinite;
   pointer-events: none;
 }
-.firefly::before, .firefly::after {
+.firefly::before,
+.firefly::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1301,45 +1311,38 @@ background-color: #153757;
   11.5384615385% {
     transform: translateX(25vw) translateY(1vh) scale(0.28);
   }
- 
-
-
 }
 
-.bgFirst{
+.bgFirst {
   background-color: rgb(173, 46, 236);
   color: black;
 }
-.bgSecond{
+.bgSecond {
   background-color: rgb(23, 162, 55);
   color: black;
 }
-.bgThird{
+.bgThird {
   background-color: rgb(199, 62, 158);
   color: black;
 }
-.bgFourth{
+.bgFourth {
   background-color: rgb(175, 181, 7);
   color: black;
 }
 
-
-
-.bgF{
+.bgF {
   background-color: rgb(203, 123, 243);
   color: rgb(64, 64, 64);
 }
-.bgS{
+.bgS {
   background-color: rgb(140, 221, 73);
   color: rgb(64, 64, 64);
 }
-.bgT{
+.bgT {
   background-color: rgb(233, 114, 198);
   color: rgb(64, 64, 64);
 }
-.bgFou{
+.bgFou {
   background-color: rgb(251, 255, 138);
   color: rgb(64, 64, 64);
 }
-
-
