@@ -1,6 +1,6 @@
 "use client";
-import CatData from "./CatData";
-
+import ActivityData from "./ActivityData";
+import JokeData from './JokeData'
 export default function Calculator() {
   return (
     <div className="mt-3 -mb-[30vh] py-24 sm:py-32 apipic">
@@ -16,8 +16,8 @@ export default function Calculator() {
           </div>
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <CatData />
-        <CatData /><CatData />
+        <ActivityData />
+        <JokeData />
         </div>
       </div>
     </div>
