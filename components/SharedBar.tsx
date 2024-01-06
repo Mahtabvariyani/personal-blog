@@ -1,33 +1,35 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { GiFireBottle } from "react-icons/gi";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Lottie from "lottie-react";
 import Bar from "@/public/bar.json";
+import Link from "next/link";
 const links = [
   {
+    href: "#",
     text: "Make changes to your profile here. Click save when you're done.",
     id: 1,
   },
   {
+    href: "#",
     text: "Make changes to your profile here. Click save when you're done.",
     id: 12,
   },
   {
+    href: "#",
     text: "Make changes to your profile here. Click save when you're done.",
     id: 13,
   },
   {
+    href: "#",
     text: "Make changes to your profile here. Click save when you're done.",
     id: 14,
   },
@@ -36,18 +38,24 @@ export function SheetDemo() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button
-          variant="outline"
-          className="fixed top-0 right-0 mt-[60vh] w-[50px] mr-4 rounded-[100%] text-white bg-sky-900 border-4"
-        >
-          Info
-        </Button>
+        <div className="fixed top-0 right-0 mt-[60vh] mr-4 bg-transparent border-none ">
+          <GiFireBottle
+            size={40}
+            className="text-sky-600 gradient-background"
+          />
+        </div>
       </SheetTrigger>
       <SheetContent className="bg-transparent backdrop-blur-3xl text-white border-left border-sky-700">
         <SheetHeader className="text-white">
-          <SheetTitle className="text-sky-200">More Infos</SheetTitle>
+          <SheetTitle className="text-sky-200 italic">More Infos</SheetTitle>
           {links.map((link) => (
-            <SheetDescription key={link.id}>{link.text}</SheetDescription>
+            <Link
+              key={link.id}
+              href={link.href}
+              className="underline hover:text-blue-400"
+            >
+              {link.text}
+            </Link>
           ))}
 
           <div className="flex flex-col py-4">
