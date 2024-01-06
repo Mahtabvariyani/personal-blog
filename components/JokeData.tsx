@@ -34,17 +34,19 @@ const JokeData: React.FC = () => {
   };
 
   return (
-    <article className="flex max-w-xl flex-col items-start justify-between border-gray-200 p-7 backdrop-blur-sm rounded-md border-4">
-      <div className="flex items-center gap-x-4 text-xs">
+    <article className="flex max-w-xl flex-col items-start justify-between border-gray-200 p-7 backdrop-blur-md rounded-md border-4">
+      <div className="flex flex-col items-center gap-x-4 text-xs">
+      <span className="text-blue-100 text-lg mb-5">
+          For Generating a random Joke 
+        </span>
         <Button className="bg-sky-900 ml-2" onClick={() => handleClick()}>
-          Button
+          Click Here
         </Button>
       </div>
       {joke && (
         <div
-          className="relative mt-8 flex items-center gap-x-4 p-4 h-[20vh] text-blue-100 rounded-xl"
+          className="relative mt-8 flex items-center gap-x-4 p-4 h-[20vh] text-blue-400 rounded-xl italic text-xl"
         >
-          <br />
           {joke.setup}
           <br />
           {joke.punchline}

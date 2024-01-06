@@ -39,7 +39,7 @@ const ActivityData: React.FC = () => {
 
   return (
     <article className="flex max-w-xl flex-col items-start justify-between border-gray-200  p-7 backdrop-blur-md  rounded-md	border-4  ">
-      <div className="flex flex-col items-center gap-x-4 text-xs">
+      <div className="flex flex-col items-center gap-x-4 text-xs ">
         <span className="text-blue-100 text-lg mb-5">
           If you Are Bored, to Know what To do
         </span>
@@ -51,7 +51,7 @@ const ActivityData: React.FC = () => {
         activities.map((activity: Activity, index: number) => (
           <div
             key={index}
-            className="relative mt-8 flex  items-center gap-x-4 p-4 h-[20vh] text-red-500 text-2xl rounded-xl"
+            className="relative mt-8 flex  items-center italic gap-x-4 p-4 h-[20vh] text-blue-500  text-xl rounded-xl"
           >
             {activity.activity}
           </div>
