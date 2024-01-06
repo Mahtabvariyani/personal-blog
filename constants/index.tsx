@@ -82,8 +82,8 @@ export const navLinks = [
   },
   {
     href: "/calculator",
-    title: "Calculator",
-    description: "Still Working On it",
+    title: "Dummy APi",
+    description: "Generating Stuff like Jokes and informations and  .... just for fetching data from an api as Practice",
   },
   {
     href: "/clock",
