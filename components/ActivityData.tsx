@@ -23,10 +23,15 @@ const ActivityData: React.FC = () => {
   }, []);
 
   const handleClick = () => {
-    console.log("Clicked");
     fetch("https://www.boredapi.com/api/activity")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
+
+        // Clear the previous data from local storage
+        localStorage.removeItem("Activities");
+
+        // Set the new activity data
         setActivities(data);
         localStorage.setItem("Activities", JSON.stringify(data));
       })
@@ -34,6 +39,7 @@ const ActivityData: React.FC = () => {
         console.log(error, "Error");
       });
   };
+
 
   return (
     <article className="flex max-w-xl flex-col items-start justify-between border-gray-200  p-7 backdrop-blur-md  rounded-md	border-4  ">
