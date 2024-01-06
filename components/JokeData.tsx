@@ -23,7 +23,6 @@ const JokeData: React.FC = () => {
     fetch("https://official-joke-api.appspot.com/random_joke")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Jokeeeeeeee", data);
         setJoke(data);
         localStorage.setItem("savedJoke", JSON.stringify(data));
 

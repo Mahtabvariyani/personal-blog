@@ -11,7 +11,7 @@ interface Activity {
 }
 
 const ActivityData: React.FC = () => {
-  const [activities, setActivities] = useState<Array<Activity> | undefined>(
+  const [activities, setActivities] = useState<Activity | undefined>(
     undefined
   );
 
@@ -27,10 +27,8 @@ const ActivityData: React.FC = () => {
     fetch("https://www.boredapi.com/api/activity")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        const updatedActivities = [...(activities || []), data];
-        setActivities(updatedActivities);
-        localStorage.setItem("Activities", JSON.stringify(updatedActivities));
+        setActivities(data);
+        localStorage.setItem("Activities", JSON.stringify(data));
       })
       .catch((error) => {
         console.log(error, "Error");
@@ -47,15 +45,13 @@ const ActivityData: React.FC = () => {
           Click Here
         </Button>
       </div>
-      {Array.isArray(activities) &&
-        activities.map((activity: Activity, index: number) => (
+      {activities && (
           <div
-            key={index}
             className="relative mt-8 flex  items-center italic gap-x-4 p-4 h-[20vh] text-blue-500  text-xl rounded-xl"
           >
-            {activity.activity}
+            {activities.activity}
           </div>
-        ))}
+        )}
     </article>
   );
 };
