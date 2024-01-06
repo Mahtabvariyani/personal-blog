@@ -45,9 +45,9 @@ export function SheetDemo() {
           />
         </div>
       </SheetTrigger>
-      <SheetContent className="bg-transparent backdrop-blur-3xl text-white border-left border-sky-700">
+      <SheetContent className="bg-transparent backdrop-blur-xl text-white border-left border-sky-700">
         <SheetHeader className="text-white">
-          <SheetTitle className="text-sky-200 italic">More Infos</SheetTitle>
+          <SheetTitle className="text-sky-700 italic">More Infos</SheetTitle>
           {links.map((link) => (
             <Link
               key={link.id}
