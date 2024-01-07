@@ -19,6 +19,20 @@ body {
   background-color: #0d2338;
 }
 
+.blink {
+  animation: blink-animation 3s steps(5, start) infinite;
+  -webkit-animation: blink-animation 3s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
 .apipic {
   background-image: 
     url("/dummydata.png");
