@@ -2,6 +2,7 @@ import Link from "next/link";
 import { client } from "../lib/sanity";
 import { Interview } from "../lib/interface";
 import LottieePage from "@/components/Lottiee";
+import Image from "next/image";
 
 async function getData() {
   const query = `*[_type == "interviewQuestion"]`;
@@ -15,14 +16,20 @@ export default async function IndexPage() {
 
   return (
     <>
-      <div className="relative isolate overflow-hidden sm:py-24"> 
+      <div className="relative isolate overflow-hidden sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl whitespace-nowrap">
-             The JavaScript Interview Questions
+          <div className="mx-auto max-w-2xl lg:mx-0 flex flex-row">
+            <h2 className="text-2xl mt-6 font-bold tracking-tight text-gray-200 sm:text-4xl whitespace-nowrap">
+              The JavaScript Interview Questions
             </h2>
 
-          
+            <Image
+              src="/js.png"
+              alt="js"
+              width={100}
+              height={100}
+              className="ml-4 pb-3"
+            />
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
@@ -35,7 +42,7 @@ export default async function IndexPage() {
                 <li key={post._id} className="py-4">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <div>
-                      <p className="text-base font-medium leading-6 text-teal-500">
+                      <p className="text-base font-medium leading-6 text-sky-500">
                         {new Date(post._createdAt).toISOString().split("T")[0]}
                       </p>
                     </div>
