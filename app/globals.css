@@ -10,10 +10,6 @@ html,
 body {
   height: 100%;
 }
-/* 
-
-https://th.bing.com/th/id/OIG.23f_ENm53N2iDvSqq23U?w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn
-*/
 
 body {
   background-color: #0d2338;
@@ -35,10 +31,10 @@ body {
 }
 .apipic {
   background-image: 
-    url("/dummydata.png");
+    url("/dummyy.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 700px;
+  background-size: 500px;
 }
 
 .firefly {
