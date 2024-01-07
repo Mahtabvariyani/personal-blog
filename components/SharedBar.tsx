@@ -12,6 +12,7 @@ import {
 import Lottie from "lottie-react";
 import Bar from "@/public/bar.json";
 import Link from "next/link";
+import InterviewQuestion from "@/components/Questions";
 const links = [
   {
     href: "#",
@@ -48,15 +49,6 @@ export function SheetDemo() {
       <SheetContent className="bg-transparent backdrop-blur-xl text-white border-left border-sky-700">
         <SheetHeader className="text-white">
           <SheetTitle className="text-sky-700 italic">More Infos</SheetTitle>
-          {links.map((link) => (
-            <Link
-              key={link.id}
-              href={link.href}
-              className="underline hover:text-blue-400"
-            >
-              {link.text}
-            </Link>
-          ))}
 
           <div className="flex flex-col py-4">
             <div className="flex flex-col items-center gap-4">
