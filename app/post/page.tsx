@@ -15,25 +15,25 @@ export default async function IndexPage() {
 
   return (
     <>
-      <div className="relative isolate overflow-hidden sm:py-24"> 
+      <div className="relative isolate overflow-hidden px-6 py-20 sm:py-32 lg:px-8 ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl whitespace-nowrap">
+          <div className="mx-auto max-w-2xl lg:mx-0 ">
+            <h2 className="text-xl  tracking-tight text-gray-200 sm:text-4xl whitespace-nowrap ">
               The posts that I write OR like
             </h2>
 
             <LottieePage />
           </div>
-          <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div className="mx-auto  max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
               <hr className="text-white w-full" />
             </div>
           </div>
           <div className="divide-y divide-gray-200 dark:divide-gray-700">
-            <ul className="mt-10">
+            <ul className="mt-10 -mb-10">
               {data.map((post) => (
-                <li key={post._id} className="py-4">
-                  <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                <li key={post._id} className="mb-10">
+                  <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0 ">
                     <div>
                       <p className="text-base font-medium leading-6 text-teal-500">
                         {new Date(post._createdAt).toISOString().split("T")[0]}

@@ -1,19 +1,18 @@
 "use client";
 import { navLinks } from "@/constants";
-import { Dialog } from '@headlessui/react';
+import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { FaRegFolderOpen } from "react-icons/fa6";
 import { MdCloseFullscreen } from "react-icons/md";
 import React, { useState } from "react";
 
-
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className=" text-blue-200 items-center flex flex-row ml-10">
+    <header className=" text-blue-200 items-center flex flex-row ml-10 ">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between p-6 lg:px-8 mb-10 "
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -33,7 +32,7 @@ const Navbar = () => {
             />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 ">
           {navLinks.map((item) => (
             <Link
               key={item.title}

@@ -7,9 +7,7 @@ import fun from "@/public/fun.json";
 
 const lottieIcons = [
 
-  {
-    data: fourth,
-  },
+
   {
     data: fun,
   },

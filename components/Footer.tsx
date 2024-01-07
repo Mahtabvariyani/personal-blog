@@ -9,7 +9,7 @@ import wecode from '@/public/wecode.png'
 export default function Footer() {
   return (
     <footer className=" z-10 relative">
-      <div className="mt-[40vh]" />
+      <div className="mt-[5vh]" />
       <div className="mx-auto w-full max-w-screen-xl">
         <div className=" grid grid-cols-2 gap-5 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>

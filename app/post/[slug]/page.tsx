@@ -25,7 +25,7 @@ export default async function SlugPage({
         <Image
           src={urlFor(value).url()}
           alt="Image"
-          className="rounded-lg"
+          className="w-[400px] mt-4 lg:ml-[60vh] xs:ml-[60vh] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[400px] m-auto md:-ml-4 "
           width={800}
           height={800}
         />
@@ -38,7 +38,7 @@ export default async function SlugPage({
       <header className="pt-6 xl:pb-6">
         <div className="space-y-1 text-center">
           <div>
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+            <h1 className="text-3xl mt-10 font-extrabold leading-9 tracking-tight text-sky-200 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
               {data.title}
             </h1>
           </div>
@@ -47,10 +47,10 @@ export default async function SlugPage({
 
       <div className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:divide-y-0">
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-          <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg">
+          <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg text-white mr-10 ml-10 text-xl">
             <PortableText
-              value={data.content}
               components={PortableTextComponent}
+              value={data.content}
             />
           </div>
         </div>

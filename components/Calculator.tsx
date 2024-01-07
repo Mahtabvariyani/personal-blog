@@ -3,7 +3,7 @@ import ActivityData from "./ActivityData";
 import JokeData from './JokeData'
 export default function Calculator() {
   return (
-    <div className="mt-3 -mb-[30vh] py-24 sm:py-32 apipic">
+    <div className=" py-24 sm:py-32 apipic">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 ">
           <div className="flex flex-col">
